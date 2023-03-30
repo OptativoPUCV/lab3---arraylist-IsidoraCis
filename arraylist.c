@@ -70,9 +70,9 @@ void* get(ArrayList * l, int i){
 }
 
 int get_size(ArrayList * l){
-    lista->capacity = 2;
-    lista->size = 0;
-    lista->data = (void **) malloc(sizeof(void*));
+    l->capacity = 2;
+    l->size = 0;
+    l->data = (void **) malloc(sizeof(void*));
     return l->size;
 }
 
