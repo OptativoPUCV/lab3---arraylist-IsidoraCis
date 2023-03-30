@@ -52,11 +52,11 @@ void* pop(ArrayList * l, int i){
   }
   if(i<0 || i >= l->size) return NULL;
   void *dato = l->data[i];
-  for(int j = i ; j<size; j++)
+  for(int j = i ; j<l->size; j++)
     {
       l->data[j+1] = l->data[j];
     }
-  size--;
+  l->size--;
   return dato;
 }
 
