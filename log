@@ -135,3 +135,18 @@ arraylist.c:60:10: error: returning ‘int’ from a function with return type �
 cc1: all warnings being treated as errors
 Compilation failed
 439359a
+Thu 30 Mar 2023 04:12:30 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘pop’:
+arraylist.c:54:16: error: ‘list’ undeclared (first use in this function)
+   54 |   void *dato = list->data[i];
+      |                ^~~~
+arraylist.c:54:16: note: each undeclared identifier is reported only once for each function it appears in
+arraylist.c:55:21: error: ‘size’ undeclared (first use in this function); did you mean ‘dysize’?
+   55 |   for(int j = i ; j<size; j++)
+      |                     ^~~~
+      |                     dysize
+Compilation failed
+8afbac6
