@@ -202,3 +202,9 @@ arraylist.c:78:5: error: ‘lista’ undeclared (first use in this function)
 arraylist.c:78:5: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 4ed32a8
+Thu 30 Mar 2023 04:17:05 PM UTC: 
+ arraylist.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+ tests:  16|0
+total_score: 70/70
+6a9cd45
