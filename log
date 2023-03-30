@@ -6,3 +6,13 @@ Thu 30 Mar 2023 03:24:44 PM UTC:
  tests:  0|6
 total_score: 0/70
 9304ed5
+Thu 30 Mar 2023 03:37:07 PM UTC: 
+ arraylist.c | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘createList’:
+arraylist.c:15:30: error: void value not ignored as it ought to be
+   15 |     if(lista == NULL) return exit(EXIT_FAILURE);
+      |                              ^~~~~~~~~~~~~~~~~~
+Compilation failed
+6a1d89f
