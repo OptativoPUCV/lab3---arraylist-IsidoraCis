@@ -90,3 +90,26 @@ Thu 30 Mar 2023 04:06:40 PM UTC:
  tests:  8|2
 total_score: 40/70
 836ddc1
+Thu 30 Mar 2023 04:09:59 PM UTC: 
+ arraylist.c | 13 ++++++++++++-
+ 1 file changed, 12 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘pop’:
+arraylist.c:54:13: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘==’ token
+   54 |   void dato == list->data[i];
+      |             ^~
+arraylist.c:54:13: error: expected expression before ‘==’ token
+arraylist.c:55:21: error: ‘size’ undeclared (first use in this function); did you mean ‘dysize’?
+   55 |   for(int j = i ; j<size; j++)
+      |                     ^~~~
+      |                     dysize
+arraylist.c:55:21: note: each undeclared identifier is reported only once for each function it appears in
+arraylist.c:60:10: error: ‘dato’ undeclared (first use in this function)
+   60 |   return dato;
+      |          ^~~~
+arraylist.c:61:1: error: control reaches end of non-void function [-Werror=return-type]
+   61 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+92e92ed
